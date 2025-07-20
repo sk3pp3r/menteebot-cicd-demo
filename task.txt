@@ -1,0 +1,52 @@
+DevOps Interview Question: Git, Docker, CI/CD, and Cloud Implementation
+Scenario:
+Imagine you're a DevOps engineer starting a new greenfield project. The development team is beginning to write their first microservice in Python (you can assume a simple hello_world.py script). They need a robust and automated way to manage their code, containerize their application, build artifacts, and deploy them to a cloud environment.
+Task:
+Your task is to demonstrate your understanding and practical skills by performing the following:
+GitHub Repository Setup:
+
+
+Create a new, public repository in your personal GitHub account. Name it something descriptive, like my-devops-cicd-demo.
+Initialize this repository with a README.md file and a .gitignore file (appropriate for Python projects).
+Add a simple Python script (e.g., hello_world.py that just prints "Hello from CI/CD!") to the repository.
+Include a Dockerfile that builds a Docker image for your hello_world.py application.
+CI/CD Pipeline with Docker and Versioning (Cloud-focused):
+
+
+Design and implement a CI/CD pipeline that automatically builds, containerizes, and deploys your hello_world.py application.
+This pipeline should be triggered by pushes to the main branch of your GitHub repository.
+The pipeline must build a Docker image of your application.
+Crucially, the pipeline must incorporate a versioning strategy (Major.Minor.Patch - e.g., 1.0.0, 1.0.1, 1.1.0) for both the application and the Docker image. Explain how your versioning scheme works and how it's integrated into the pipeline.
+The pipeline must be implemented using AWS cloud services.
+Deployment Target (Simplified): For this exercise, a simple deployment target for your Docker image is sufficient. This could be pushing the image to a container registry and potentially deploying it to a basic compute service. Please state your chosen deployment target clearly.
+Deliverables:
+Please be prepared to:
+Share the URL of your GitHub repository.
+Walk through your GitHub repository and explain:
+The project structure, including your Dockerfile.
+Your CI/CD configuration files (e.g., build specifications, pipeline definitions).
+How you implemented the versioning strategy for both the application and the Docker image.
+Explain the architecture of your CI/CD pipeline in AWS:
+Which AWS services are you using and why did you choose them?
+How do they connect and interact?
+How does the Docker image building and pushing fit into the pipeline?
+How does the versioning strategy manifest in the AWS services (e.g., image tags in ECR, deployed service versions)?
+Demonstrate a successful pipeline run:
+Make a small change to your hello_world.py file or Dockerfile.
+Push the change to GitHub.
+Show the pipeline executing successfully in the AWS console, including the Docker image build and push steps.
+Show the updated version reflected in your chosen deployment target (e.g., a new image tag in ECR, an updated running container).
+Discuss strategies to optimize and reduce the build times for workflows and docker images builds.
+Describe a strategy for exposing the deployed service in AWS, including potential access considerations.
+Discuss challenges and considerations:
+What were the biggest challenges you faced during this task?
+How would you enhance this pipeline for a production environment (e.g., testing, security, rollback, blue/green deployments, container orchestration)?
+How could you automate the creation of the AWS infrastructure for this pipeline (e.g., using Infrastructure as Code tools like CloudFormation or Terraform)?
+
+AWS Account: https://menteebot-observability.signin.aws.amazon.com/console
+Username: your gmail name (without @gmail)
+Password: Meteebot12#
+Region: eu-north-1
+
+0544451122
+Michael

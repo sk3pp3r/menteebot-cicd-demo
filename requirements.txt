@@ -1,0 +1,33 @@
+# Production dependencies for Menteebot CI/CD Demo
+# Flask web framework
+Flask==2.3.3
+
+# WSGI server for production
+gunicorn==21.2.0
+
+# Structured JSON logging
+python-json-logger==2.0.7
+
+# Prometheus metrics
+prometheus-client==0.17.1
+
+# System monitoring (optional)
+psutil==5.9.6
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# HTTP client for health checks
+requests==2.31.0
+
+# Data validation
+pydantic==2.5.0
+
+# CORS support
+flask-cors==4.0.0
+
+# Rate limiting
+flask-limiter==3.5.0
+
+# Security headers
+flask-talisman==1.1.0 
